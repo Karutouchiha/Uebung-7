@@ -1,3 +1,5 @@
+package sample;
+
 public class CurrencyConvert {
     private int toConvert;
     //1Euro = 124Yen
