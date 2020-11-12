@@ -5,21 +5,23 @@
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="395.0" prefWidth="601.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1">
   <columnConstraints>
-    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="236.0" minWidth="10.0" prefWidth="216.0" />
+    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="195.20001220703125" minWidth="10.0" prefWidth="91.19999999999999" />
+      <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="236.0" minWidth="10.0" prefWidth="216.0" />
   </columnConstraints>
   <rowConstraints>
-    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="196.8" minHeight="20.800002098083496" prefHeight="196.8" valignment="BOTTOM" />
+      <RowConstraints maxHeight="373.5999979019165" minHeight="10.0" prefHeight="198.39999999999998" valignment="TOP" vgrow="SOMETIMES" />
   </rowConstraints>
    <children>
-      <Button alignment="CENTER" mnemonicParsing="false" text="Convert" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-      <TextField GridPane.rowIndex="1" />
-      <TextField GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <Button fx:id="b_convert" alignment="CENTER" mnemonicParsing="false" text="Convert" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <TextField fx:id="txt_Euro" GridPane.rowIndex="1" />
+      <TextField fx:id="txt_Yen" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Euro(€)" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Yen(¥)" GridPane.columnIndex="2" />
    </children>
 </GridPane>
