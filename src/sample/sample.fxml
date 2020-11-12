@@ -16,7 +16,7 @@
   <rowConstraints>
     <RowConstraints maxHeight="196.8" minHeight="20.800002098083496" prefHeight="196.8" valignment="BOTTOM" />
       <RowConstraints maxHeight="373.5999979019165" minHeight="10.0" prefHeight="56.4000152587891" valignment="TOP" vgrow="SOMETIMES" />
-      <RowConstraints maxHeight="373.5999979019165" minHeight="10.0" prefHeight="208.39998474121091" valignment="TOP" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="373.5999979019165" minHeight="10.0" prefHeight="208.39998474121091" valignment="CENTER" vgrow="SOMETIMES" />
   </rowConstraints>
    <children>
       <Button fx:id="b_convert" alignment="CENTER" mnemonicParsing="false" onMousePressed="#convert" text="Convert" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1" />
@@ -24,6 +24,6 @@
       <TextField fx:id="txt_Yen" GridPane.columnIndex="2" GridPane.rowIndex="1" />
       <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Euro(€)" />
       <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Yen(¥)" GridPane.columnIndex="2" />
-      <TextField fx:id="txt_error" prefHeight="42.0" prefWidth="129.0" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Text fx:id="txt_error" fill="#ff0000" strokeType="OUTSIDE" strokeWidth="0.0" text="Error" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
    </children>
 </GridPane>
