@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
@@ -23,7 +25,10 @@
       <TextField fx:id="txt_Euro" GridPane.rowIndex="1" />
       <TextField fx:id="txt_Yen" GridPane.columnIndex="2" GridPane.rowIndex="1" />
       <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Euro(€)" />
-      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Yen(¥)" GridPane.columnIndex="2" />
       <Text fx:id="txt_error" fill="#ff0000" strokeType="OUTSIDE" strokeWidth="0.0" text="Error" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <ChoiceBox fx:id="cbox" prefWidth="150.0" GridPane.columnIndex="2">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></ChoiceBox>
    </children>
 </GridPane>
