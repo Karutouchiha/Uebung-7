@@ -13,11 +13,17 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Controller c = new Controller();
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        ChoiceBox<String> choiceBox = new ChoiceBox();
-        choiceBox.setItems(FXCollections.observableArrayList("Yen(¥)","US-Dollar($)"));
-        choiceBox.setValue("Yen(¥)");
+        Controller c = new Controller();
+        ChoiceBox choiceBox = new ChoiceBox();
+        Currency Yen = new Currency("Yen(¥)",124);
+        Currency USD = new Currency("US-Dollar($)",1.28);
+        ObservableList Currency = FXCollections.observableArrayList(Yen,USD);
+        c.setAl(Yen);
+        c.setAl(USD);
+
+        choiceBox.setItems(Currency);
+        choiceBox.setValue(1);
         c.setCbox(choiceBox);
         primaryStage.setTitle("Currency Converter");
         primaryStage.setScene(new Scene(root, 500, 275));
