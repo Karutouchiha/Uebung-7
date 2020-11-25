@@ -4,7 +4,6 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.ChoiceBox;
 import javafx.stage.Stage;
 
 public class Main extends Application {
@@ -12,9 +11,14 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+        Controller c = new Controller();
         CurrencyConvert cc = new CurrencyConvert();
-        cc.addCurrency(new Currency("Yen(¥)", 124.00));
-        cc.addCurrency(new Currency("US Dollar($)", 1.18));
+        Currency Yen = new Currency("Yen(¥)", 124.00);
+        Currency USD = new Currency("US Dollar($)", 1.18);
+        cc.addCurrency(Yen);
+        cc.addCurrency(USD);
+        c.setCbox(Yen);
+        c.setCbox(USD);
         primaryStage.setTitle("Currency Converter");
         primaryStage.setScene(new Scene(root, 500, 275));
         primaryStage.show();
