@@ -12,11 +12,8 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         Controller c = new Controller();
-        CurrencyConvert cc = new CurrencyConvert();
         Currency Yen = new Currency("Yen(¥)", 124.00);
         Currency USD = new Currency("US Dollar($)", 1.18);
-        cc.addCurrency(Yen);
-        cc.addCurrency(USD);
         c.setCbox(Yen);
         c.setCbox(USD);
         primaryStage.setTitle("Currency Converter");

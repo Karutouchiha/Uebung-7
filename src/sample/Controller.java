@@ -29,11 +29,11 @@ public class Controller {
         System.out.print(cbox.getItems());
         try {
             txt_error.setVisible(false);
-            //txt_Yen.setText();
+            txt_Yen.setText(String.valueOf(cu.toWährung(cbox.getValue(), Double.parseDouble(txt_Euro.getText()))));
         }
         catch (Exception ex){
             try {
-               //txt_Euro.setText();
+               txt_Euro.setText(String.valueOf(cu.toWährung(cbox.getValue(), Double.parseDouble(txt_Yen.getText()))));
             }
             catch (Exception e){
                 txt_error.setVisible(true);
